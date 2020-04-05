@@ -16,3 +16,5 @@ Search thousands of recipes on the website and get a full list of ingredients, a
 ### The Meal DB
 
 https://www.themealdb.com/api.php
+
+### JSON Snipped
