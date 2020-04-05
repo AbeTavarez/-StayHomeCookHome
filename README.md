@@ -3,7 +3,7 @@
 ## StayHomeCookHome
 Project Name.
 
-# Project Description
+## Project Description
 
 Get easy, fast and healthy recipes to make at home while you stay safe. 
 
