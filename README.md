@@ -1,6 +1,6 @@
-# StayHomeCookHome
+# Project Overview
 
-Project Name: StayHomeCookHome
+# StayHomeCookHome
 
 # Project Description
 
