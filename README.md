@@ -26,3 +26,28 @@ https://res.cloudinary.com/abetavarez/image/upload/v1586121154/postman_ulhuhm.pn
 ## Wireframe
 + Wireframe Link:
 https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.png
+
+## MVP/Post MVP
+
+Functionality
+
+### MVP
++ MVP Goals
+
+### Post MVP
++ Post MVP
+
+## Project Schedule
+
+This schedule will be used to keep track of your progress throughout the week and align with our expectations.
+
+You are responsible for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding Saturday and Sunday.
+
+Day	Deliverable	Status
+April 2rd	Project Prompt	Incomplete
+April 3rd - 5th	Wireframes / Priority Matrix / Functional Components	Incomplete
+April 6th	Core Application Structure (HTML, CSS, etc.)	Incomplete
+April 7th	Pseudocode / actual code	Incomplete
+April 8th	Initial Clickable Model	Incomplete
+April 9th	MVP	Incomplete
+April 10th	Present	Incomplete
