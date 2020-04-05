@@ -13,9 +13,11 @@ Search thousands of recipes on the website and get a full list of ingredients, a
 
 ## Api and Data Sample
 
-### The Meal DB
+### The Meal DB API
 
 https://www.themealdb.com/api.php
 
-### JSON
+### JSON Data
 
+https://res.cloudinary.com/abetavarez/image/upload/v1586121154/postman_ulhuhm.png
+Postman.
