@@ -20,6 +20,9 @@ https://www.themealdb.com/api.php
 
 ### JSON Data
 
-+ Postman
++ Postman:
 https://res.cloudinary.com/abetavarez/image/upload/v1586121154/postman_ulhuhm.png
 
+## Wireframe
++ Wireframe Link:
+https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.png
