@@ -1,7 +1,7 @@
 # Project Overview
 
-## StayHomeCookHome
-Project Name.
+## Project Name
+StayHomeCookHome
 
 ## Project Description
 
@@ -15,6 +15,7 @@ Search thousands of recipes on the website and get a full list of ingredients, a
 
 ### The Meal DB API
 
+The MealDB site:
 https://www.themealdb.com/api.php
 
 ### JSON Data
