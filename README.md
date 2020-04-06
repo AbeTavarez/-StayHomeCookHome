@@ -15,8 +15,9 @@ StayHomeCookHome
 
 #### The Meal DB API
 
-+ The MealDB site:
-https://www.themealdb.com/api.php
+The MealDB site: 
+![MealDB site link]https://www.themealdb.com/api.php")
+
 
 #### JSON Data
 
