@@ -68,6 +68,11 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Wireframes/Priority Matrix | L | 1hr| 1hr | 1hr |
 | Testing API | L | 1hr| 1.5hrs | 1.5hrs |
 | Basic HTML and Basic CSS | M | 3hrs| hrs | hrs |
+| Setting up API, CDNs and Test Calls | M | 3hr| hrs | hrs |
+| JavaScript DOM Manipulation | M | 4hr| hrs | hrs |
+| JS Functions and Handlers | M | 5hr| hrs | hrs |
+| Applys CSS FlexBoxI | H | 4hr| hrs | hrs |
+| Site interactivity JS & FlexBox | H | 6hr| hrs | hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Code Snippet
