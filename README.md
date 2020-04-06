@@ -56,7 +56,7 @@ https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.p
 
 ## Priority Matrix
 
-<img>https://wireframe.cc/S48cyU</img>
+<img src="https://wireframe.cc/S48cyU" alt="wire frame picture"></img>
 
 ## Timeframes
 
