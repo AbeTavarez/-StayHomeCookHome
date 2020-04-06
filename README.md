@@ -4,7 +4,7 @@
 StayHomeCookHome
 
 ## Project Description
-Now that you're working from home, this is the best time to learn how to coook.
+Now that you're working from home, this is the best time to learn how to cook.
 
 + Get easy, fast and healthy recipes to make at home while you stay safe. 
 
