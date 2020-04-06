@@ -50,7 +50,7 @@ Postman:
 |  Day | Deliverable | Status
 |---|---| ---|
 |April 2rd| Project Prompt | Complete
-|April 3rd - 5th| Wireframes / Priority Matrix / Functional Components | Incomplete
+|April 3rd - 5th| Wireframes / Priority Matrix / Functional Components | Complete
 |April 6th| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |April 7th| Pseudocode / actual code | Incomplete
 |April 8th| Initial Clickable Model  | Incomplete
