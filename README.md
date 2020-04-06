@@ -16,13 +16,12 @@ StayHomeCookHome
 #### The Meal DB API
 
 The MealDB site: 
-![MealDB site link](https://www.themealdb.com/api.php)
-
+(https://www.themealdb.com/api.php "MealDb Site")
 
 #### JSON Data
 
-+ Postman:
-https://res.cloudinary.com/abetavarez/image/upload/v1586121154/postman_ulhuhm.png
+Postman: 
+![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586121154/postman_ulhuhm.png "JSON DATA")
 
 ## Wireframe
 + Wireframe Link:
