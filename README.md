@@ -43,13 +43,12 @@ The MealDB site:
 - Style the page as indicated on the wireframe.
 - Add search funtionallity, allowing the user to search recipes.
 - Render results on the page with images and recipe ingredients.
-- Render random recipes on the left column of the page.
-- Add search categories on the right column of the page.
-
 ---
 
 ### Post MVP
 
+- Render random recipes on the left column of the page.
+- Add search categories on the right column of the page.
 - Add short video link to recipes.
 - Use local storage to save favorites.
 
@@ -58,10 +57,10 @@ The MealDB site:
 | Day             | Deliverable                                          | Status     |
 | --------------- | ---------------------------------------------------- | ---------- |
 | April 2rd       | Project Prompt                                       | Complete   |
-| April 3rd - 5th | Wireframes / Priority Matrix / Functional Components | Complete   |
-| April 6th       | Core Application Structure (HTML, CSS, etc.)         | Incomplete |
-| April 7th       | Pseudocode / actual code                             | Incomplete |
-| April 8th       | Initial Clickable Model                              | Incomplete |
+| April 3rd - 5th | Wireframes / Priority Matrix                         | Complete   |
+| April 6th       | Project Aproval/Core Application Structure(HTML,CSS) | Complete   |
+| April 7th       | Pseudocode / API and JS functionality                | Incomplete |
+| April 8th       | Clickable Model Search, Rendering functionality      | Incomplete |
 | April 9th       | MVP                                                  | Incomplete |
 | April 10th      | Present                                              | Incomplete |
 
@@ -75,16 +74,17 @@ The MealDB site:
 
 | Component                           | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Research APIs                       |    L     |      2hrs      |     2hrs      |    2hrs     |
-| Wireframes/Priority Matrix          |    L     |      2hr       |      1hr      |     1hr     |
-| Testing API & JSON Data             |    M     |      2hr       |     2hrs      |    2hrs     |
+| Research APIs                       |    L     |      4hrs      |     4hrs      |    4hrs     |
+| Wireframes/Priority Matrix          |    L     |      3hrs      |     3hrs      |    3hrs     |
+| Testing API & JSON Data             |    M     |      3hrs      |     3hrs      |    3hrs     |
 | Basic HTML and Basic CSS            |    M     |      3hrs      |      hrs      |     hrs     |
-| Setting up API, CDNs and Test Calls |    M     |      3hr       |      hrs      |     hrs     |
-| JavaScript DOM Manipulation         |    H     |      4hr       |      hrs      |     hrs     |
-| JS Functions and Handlers           |    H     |      5hr       |      hrs      |     hrs     |
-| Applys CSS FlexBoxI                 |    H     |      4hr       |      hrs      |     hrs     |
-| Site interactivity JS & FlexBox     |    H     |      6hr       |      hrs      |     hrs     |
-| Total                               |    H     |     31hrs      |     6hrs      |    6hrs     |
+| Setting up API, CDNs and Test Calls |    M     |      4hrs      |      hrs      |     hrs     |
+| JavaScript DOM Manipulation         |    H     |      4hrs      |      hrs      |     hrs     |
+| Testing and Debugging               |    H     |      4hrs      |      hrs      |     hrs     |
+| JS Functions and Handlers           |    H     |      5hrs      |      hrs      |     hrs     |
+| Applys CSS FlexBoxI                 |    H     |      4hrs      |      hrs      |     hrs     |
+| Site interactivity JS & FlexBox     |    H     |      6hrs      |      hrs      |     hrs     |
+| Total                               |    H     |     40hrs      |     6hrs      |    6hrs     |
 
 ## Code Snippet
 
