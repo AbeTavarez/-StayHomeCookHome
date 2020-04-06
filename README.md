@@ -40,7 +40,7 @@ Postman:
 + Render results on the page with images and recipe ingredients.
 + Render random recipes on the left column of the page.
 + Add search categories on the right column of the page. 
-
+---
 ### Post MVP
 + Add short video link  to recipes.
 + Use local storage to save favorites. 
