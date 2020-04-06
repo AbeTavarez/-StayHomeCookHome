@@ -59,6 +59,8 @@ The MealDB site:
 ## Priority Matrix
 
 ![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586146746/Screen_Shot_2020-04-06_at_12.18.45_AM_nphuft.png "priority matrix")
+---
+![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586146445/Screen_Shot_2020-04-05_at_10.43.38_PM_bqrwru.png "priority matrix")
 
 ## Timeframes
 
