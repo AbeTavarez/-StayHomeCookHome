@@ -55,9 +55,7 @@ https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.p
 |April 10th| Present | Incomplete
 
 ## Priority Matrix
-
-<img src="https://wireframe.cc/S48cyU" alt="wire frame picture"></img>
-
+https://wireframe.cc/S48cyU"
 ## Timeframes
 
 Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
