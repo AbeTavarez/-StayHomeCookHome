@@ -55,7 +55,7 @@ https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.p
 |April 10th| Present | Incomplete
 
 ## Priority Matrix
-https://wireframe.cc/S48cyU"
+https://wireframe.cc/S48cyU
 ## Timeframes
 
 Tell us how long you anticipate spending on each area of development. Be sure to consider how many hours a day you plan to be coding and how many days you have available until presentation day.
@@ -64,8 +64,10 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
+| Research APIs | L | 2hrs| 2hrs | 2hrs |
+| Wireframes/Priority Matrix | L | 1hr| 1hr | 1hr |
+| Testing API | L | 1hr| 1.5hrs | 1.5hrs |
+| Basic HTML and Basic CSS | M | 3hrs| hrs | hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
 
 ## Code Snippet
