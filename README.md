@@ -22,11 +22,10 @@ The MealDB site:
 
 #### JSON Data
 
-Postman: 
+#### Postman
 ![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586121154/postman_ulhuhm.png "postman json data")
 
 ## Wireframe
-+ Wireframe Link:
 ![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.png "wireframe image")
 
 
@@ -58,7 +57,9 @@ Postman:
 |April 10th| Present | Incomplete
 
 ## Priority Matrix
-https://wireframe.cc/S48cyU
+
+![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586146746/Screen_Shot_2020-04-06_at_12.18.45_AM_nphuft.png "priority matrix")
+
 ## Timeframes
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
