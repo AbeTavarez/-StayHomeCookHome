@@ -69,8 +69,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Testing API & JSON Data | M | 2hr| 2hrs | 2hrs |
 | Basic HTML and Basic CSS | M | 3hrs| hrs | hrs |
 | Setting up API, CDNs and Test Calls | M | 3hr| hrs | hrs |
-| JavaScript DOM Manipulation | M | 4hr| hrs | hrs |
-| JS Functions and Handlers | M | 5hr| hrs | hrs |
+| JavaScript DOM Manipulation | H | 4hr| hrs | hrs |
+| JS Functions and Handlers | H | 5hr| hrs | hrs |
 | Applys CSS FlexBoxI | H | 4hr| hrs | hrs |
 | Site interactivity JS & FlexBox | H | 6hr| hrs | hrs |
 | Total | H | 31hrs| 6hrs | 6hrs |
