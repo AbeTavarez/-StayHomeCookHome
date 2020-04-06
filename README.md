@@ -17,15 +17,17 @@ StayHomeCookHome
 
 The MealDB site: 
 (https://www.themealdb.com/api.php)
+![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586143923/Screen_Shot_2020-04-05_at_11.30.23_PM_e5cyb5.png "JSON DATA")
 
 #### JSON Data
 
 Postman: 
-![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586121154/postman_ulhuhm.png "JSON DATA")
+![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586121154/postman_ulhuhm.png "postman json data")
 
 ## Wireframe
 + Wireframe Link:
-https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.png
+![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.png "wireframe image")
+
 
 ## MVP/Post MVP
 
