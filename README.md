@@ -42,13 +42,11 @@ https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.p
 + Add short video link  to recipes.
 + Use local storage to save favorites. 
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
-
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
+## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|April 2rd| Project Prompt | Incomplete
+|April 2rd| Project Prompt | Complete
 |April 3rd - 5th| Wireframes / Priority Matrix / Functional Components | Incomplete
 |April 6th| Core Application Structure (HTML, CSS, etc.) | Incomplete
 |April 7th| Pseudocode / actual code | Incomplete
@@ -58,7 +56,7 @@ You are **responsible** for scheduling time with your squad to seek approval for
 
 ## Priority Matrix
 
-Include a full list of features that have been prioritized based on the `Time and Importance` Matrix.  Link this image in a similar manner to your wireframes
+<img>https://wireframe.cc/S48cyU</img>
 
 ## Timeframes
 
