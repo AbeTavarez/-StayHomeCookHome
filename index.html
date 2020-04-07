@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./CSS/main.css" />
-    <link rel="stylesheet" href="./CSS/queries.css" />
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./JS/app.js" defer></script>
-    <title>StayHomeCookHome</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li class="site-name">#StayHomeCookHome</li>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <!-- Display Random Meals -->
-      <article>
-        <h1>Display random meals</h1>
-        <section>
-          <div class="display-random" id="random-div">1</div>
-          <div class="display-random" id="random-div">1</div>
-          <div class="display-random" id="random-div">1</div>
-          <div class="display-random" id="random-div">1</div>
-          <div class="display-random" id="random-div">1</div>
-        </section>
-      </article>
-      <!-- Search for recipes -->
-      <article>
-        <h2>Search for a recipe</h2>
-        <section>
-          <div class="search-container">
-            <input
-              type="text"
-              id="search-input"
-              placeholder="Type here..."
-              class="search-bar"
-            />
-            <button>Go</button>
-            <!-- <small>Error message</small> -->
-          </div>
-        </section>
-      </article>
-      <!-- Search Results -->
-      <article>
-        <h2>Search Results</h2>
-        <section class="search-results">
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./CSS/style.css">
+  <!-- <link rel="stylesheet" href="./CSS/main.css" /> -->
+  <link rel="stylesheet" href="./CSS/queries.css" />
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="./JS/app.js" defer></script>
+  <title>StayHomeCookHome</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li class="site-name">#StayHomeCookHome</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Display Random Meals -->
+    <article>
+      <h1>Display random meals</h1>
+      <section>
+        <div class="display-random" id="random-div"></div>
+      </section>
+    </article>
+    <!-- Search for recipes -->
+    <article>
+      <h2>Search for a recipe</h2>
+      <section>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Type here..." class="search-bar" />
+          <button id="search-button">Go</button>
+          <!-- <small>Error message</small> -->
+        </div>
+      </section>
+    </article>
+    <!-- Search Results -->
+    <article>
+      <h2>Search Results</h2>
+      <section>
+        <div id="search-results">
+
+        </div>
+      </section>
+    </article>
+
+    <!-- About Us -->
+    <article>
+      <h3>About Us</h3>
+      <section>
+        <div>
+          <p class="about-us">Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
             and scrambled it to make a type specimen book. It has survived not
@@ -65,59 +69,24 @@
             PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
             dummy text of the printing and typesetting industry. Lorem Ipsum has
             been the industry's standard dummy text ever since the 1500s, when
-            an unknown printer took a galley of type and scrambled it to make a
-            type specimen book. It has survived not only five centuries, but
-            also the leap into electronic typesetting, remaining essentially
-            unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently
-            with desktop publishing software like Aldus PageMaker including
-            versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the
-            printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also the
-            leap into electronic typesetting, remaining essentially unchanged.
-            It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem
-            Ipsum.
-          </p>
-        </section>
-      </article>
+            an unknown printer took a galley of type and scrambled it to make a</p>
+        </div>
+      </section>
+    </article>
+  </main>
 
-      <!-- About Us -->
-      <article>
-        <h3>About Us</h3>
-        <section>
-          <div>
-            <p class="about-us">Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of type
-              and scrambled it to make a type specimen book. It has survived not
-              only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popularised in the 1960s
-              with the release of Letraset sheets containing Lorem Ipsum passages,
-              and more recently with desktop publishing software like Aldus
-              PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry. Lorem Ipsum has
-              been the industry's standard dummy text ever since the 1500s, when
-              an unknown printer took a galley of type and scrambled it to make a</p>
-          </div>
-        </section>
-      </article>
-    </main>
+  <!-- FOOTER -->
+  <footer>
+    <div class="contact">
+      <p>How to contact developer</p>
+    </div>
+    <div class="contact">
+      <p>How to contact developer</p>
+    </div>
+    <div class="contact">
+      <p>How to contact developer</p>
+    </div>
+  </footer>
+</body>
 
-    <!-- FOOTER -->
-    <footer>
-      <div class="contact">
-        <p>How to contact developer</p>
-      </div>
-      <div class="contact">
-        <p>How to contact developer</p>
-      </div>
-      <div class="contact">
-        <p>How to contact developer</p>
-      </div>
-    </footer>
-  </body>
 </html>
