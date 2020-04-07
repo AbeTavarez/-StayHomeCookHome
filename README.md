@@ -30,7 +30,11 @@ The MealDB site:
 
 ## Wireframe
 
-## ![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.png "wireframe image desktop")
+### Desktop
+
+![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586127786/sitewire_ti4yi2.png "wireframe image desktop")
+
+### Mobile
 
 ![alt text](https://res.cloudinary.com/abetavarez/image/upload/v1586180975/Screen_Shot_2020-04-06_at_9.49.11_AM_rnbqpw.png "wireframe image mobile")
 

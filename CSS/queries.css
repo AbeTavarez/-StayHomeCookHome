@@ -1,0 +1,13 @@
+/*large tablets to 1200px*/
+@media only screen and (max-width:1200px) {}
+
+/* 780px to 1023px*/
+@media only screen and (max-width: 1023px) {}
+
+
+/*small tables size 481px to 767px*/
+@media only screen and (max-width: 767px) {}
+
+
+/*screen sizes 0 to 480px*/
+@media only screen and (max-width: 480px) {}
