@@ -33,11 +33,11 @@ async function getRandomMealData() {
     //randomMeal obj of random meal
     let randomMeal = await axios.get(`${GET_RANDOM_MEAL_BASE_URL}`);
 
-    console.log('data---->', randomMeal)
+    // console.log('data---->', randomMeal)
 
 
     const meal = randomMeal.data.meals[0];
-    console.log('meal--->', meal.strMeal);
+    // console.log('meal--->', meal.strMeal);
 
     renderRandomMeal(meal)
 
@@ -93,8 +93,8 @@ async function searchMeal(value) {
   //Get Request
   try {
     let result = await axios.get(`${BASE_URL}${value}`);
-    console.log('Result Data --->', result);
-    console.log('here--->', result.data.meals[0].strIngredient1)
+    // console.log('Result Data --->', result);
+    // console.log('here--->', result.data.meals[0].strIngredient1)
 
     renderResults(result);
   } catch (error) {
@@ -106,42 +106,86 @@ async function searchMeal(value) {
 
 
 
-////
-
-
-// ingredients.filter(key => ingredients.includes('strIngredient'))
-
-// for (let key in result.data.meals[0]) {
-//   // console.log(key)
-//   for (let value in result.data.meals[0]) {
-
-//   }
-// }
-////////
-
 function renderResults(result) {
-  let keys = Object.keys(result.data.meals[0]);
-  let values = Object.values(result.data.meals[0])
+  //Data
+  let meal = result.data.meals[0];
+  //Main DIV
   const resultsDiv = document.getElementById('search-results');
+  ////////////////////////////////
+  //Display Ingredients and Measuments
+  const ulResult = document.createElement('ul');
 
-  let obj = {};
+  //Built Object
+  let ingArr = [];
+  let measArr = [];
+  let ingMeasObjArr = [];
 
-  for (let key = 0; key < keys.length; key++) {
-    for (let value = 0; value < values.length; value++) {
-      if (values[value] !== null && values[value] !== undefined) {
-        console.log(values[value])
-        obj[keys[key]] = value
-      }
+  for (i in meal) {
+    if (i.includes("Ing") && meal[i] != "") {
 
-    }
+      let li = document.createElement('li');
+      li.innerHTML = meal[i];
+      ulResult.appendChild(li)
+
+      // console.log('ing---->', meal[i])
+      ingArr.push(meal[i]);
+    };
+  };
+
+  let h2Meas = document.createElement('h2');
+  h2Meas.innerHTML = 'Measurements';
+  ulResult.appendChild(h2Meas);
+
+  for (m in meal) {
+    if (m.includes("Meas") && meal[m] != "") {
+
+      let li = document.createElement('li');
+      li.innerHTML = meal[m];
+      ulResult.appendChild(li);
+
+
+      // console.log('mes---->', meal[m])
+      measArr.push(meal[m]);
+    };
+  };
+
+  // console.log(ingArr, measArr);
+
+  for (let value = 0; value < ingArr.length; value++) {
+    let obj = {}
+    obj[ingArr[value]] = measArr[value];
+    ingMeasObjArr.push(obj);
   }
-  console.log(obj);
+  console.log('final data--->', ingMeasObjArr);
+
+
+
 
 
   //Create
-  // const h2MealName = document.createElement('h2');
-  // const h3Ingredients = document.createElement('h3');
-  // const ulResult = document.createElement('ul');
+  const h2MealName = document.createElement('h2');
+  const h3Ingredients = document.createElement('h3');
+
+
+
+  //Modify
+  h2MealName.innerHTML = result.data.meals[0].strMeal;
+  h3Ingredients.innerHTML = 'Ingredients';
+
+  //Append
+  resultsDiv.appendChild(h2MealName);
+  resultsDiv.appendChild(h3Ingredients);
+  resultsDiv.appendChild(ulResult);
+
+
+
+
+  let lis = document.createElement('li');
+  lis.innerHTML = result.data.meals[0].strIngredient1;
+  // ulResult.appendChild(lis);
+
+
+
   //generate all ingredients lis needed
 
   // for (let [key, value] of Object.entries(result.data.meals[0])) {
@@ -149,39 +193,7 @@ function renderResults(result) {
   //     console.log(key[i])
   //     console.log(value[i])
 
-  // let li = document.createElement('li');
-  // li.children = key[i];
-  // let p = document.createElement('p')
-  // p.innerHTML = value[i];
-  // console.log(li)
-  // console.log(li)
-  // li[i].appendChild(p[i])
-  // resultsDiv.children(li[i])
-  // }
-
-
-
-
-
 }
-
-
-//Modify
-// h2MealName.innerHTML = result.data.meals[0].strMeal;
-// h3Ingredients.innerHTML = 'Ingredients';
-// lis.innerHTML = result.data.meals[0].strIngredient1;
-//Append
-// resultsDiv.appendChild(h2MealName);
-// resultsDiv.appendChild(h3Ingredients);
-// resultsDiv.appendChild(ulResult);
-// resultsDiv.appendChild(lis);
-
-// }
-//   for (let i = 0; i < result.data.meals[0].strIngredients)
-
-// }
-
-
 
 
 
