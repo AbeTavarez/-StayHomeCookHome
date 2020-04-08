@@ -51,7 +51,7 @@ getRandomMealData();
 
 
 
-//*Render the random meal to top of the page
+//* Render the random meal to top of the page
 function renderRandomMeal(meal) {
   // console.log(randomMeal.data.meals['0'].strMeal)
   // console.log('Here --->', randomMeal.data.meals['0'].strMealThumb)
@@ -75,13 +75,14 @@ function renderRandomMeal(meal) {
 };
 // renderRandomMeal(randomMealsArray);
 
-//! Event Listener
-// randomMealDIV.addEventListener('click', (e) => {
-//display recipe details
-// });
+//! Event Listener and handler
+function showMealDetails() {
+
+}
+randomMealDIV.addEventListener('click', showMealDetails);
 
 
-//* Event Handlers
+//* Event Handlers for search meals
 async function searchMeal(value) {
   //Check for value
   if (searchInput.value === 'undefined') {
@@ -105,9 +106,7 @@ async function searchMeal(value) {
 
 
 
-//////
-// let ingredients = Object.keys(result.data.meals[0]).includes('strIngredient1[i]');
-
+////
 
 
 // ingredients.filter(key => ingredients.includes('strIngredient'))
@@ -121,25 +120,63 @@ async function searchMeal(value) {
 ////////
 
 function renderResults(result) {
+  let keys = Object.keys(result.data.meals[0]);
+  let values = Object.values(result.data.meals[0])
   const resultsDiv = document.getElementById('search-results');
-  //Create
-  const h2MealName = document.createElement('h2');
-  const h3Ingredients = document.createElement('h3');
-  const ulResult = document.createElement('ul');
-  //generate all ingredients lis needed
-  const lis = document.createElement('li');
 
-  //Modify
-  h2MealName.innerHTML = result.data.meals[0].strMeal;
-  h3Ingredients.innerHTML = 'Ingredients';
-  lis.innerHTML = result.data.meals[0].strIngredient1;
-  //Append
-  resultsDiv.appendChild(h2MealName);
-  resultsDiv.appendChild(h3Ingredients);
-  resultsDiv.appendChild(ulResult);
-  resultsDiv.appendChild(lis);
+  let obj = {};
+
+  for (let key = 0; key < keys.length; key++) {
+    for (let value = 0; value < values.length; value++) {
+      if (values[value] !== null && values[value] !== undefined) {
+        console.log(values[value])
+        obj[keys[key]] = value
+      }
+
+    }
+  }
+  console.log(obj);
+
+
+  //Create
+  // const h2MealName = document.createElement('h2');
+  // const h3Ingredients = document.createElement('h3');
+  // const ulResult = document.createElement('ul');
+  //generate all ingredients lis needed
+
+  // for (let [key, value] of Object.entries(result.data.meals[0])) {
+  //   for (let i of [key, value]) {
+  //     console.log(key[i])
+  //     console.log(value[i])
+
+  // let li = document.createElement('li');
+  // li.children = key[i];
+  // let p = document.createElement('p')
+  // p.innerHTML = value[i];
+  // console.log(li)
+  // console.log(li)
+  // li[i].appendChild(p[i])
+  // resultsDiv.children(li[i])
+  // }
+
+
+
+
 
 }
+
+
+//Modify
+// h2MealName.innerHTML = result.data.meals[0].strMeal;
+// h3Ingredients.innerHTML = 'Ingredients';
+// lis.innerHTML = result.data.meals[0].strIngredient1;
+//Append
+// resultsDiv.appendChild(h2MealName);
+// resultsDiv.appendChild(h3Ingredients);
+// resultsDiv.appendChild(ulResult);
+// resultsDiv.appendChild(lis);
+
+// }
 //   for (let i = 0; i < result.data.meals[0].strIngredients)
 
 // }
