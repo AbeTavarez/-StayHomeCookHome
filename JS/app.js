@@ -1,4 +1,4 @@
-console.log('Running Script...')
+console.log('Running Scripts...')
 
 //Constants
 const DOMAIN = 'https://www.themealdb.com/api/json/v1/';
@@ -47,12 +47,14 @@ async function getRandomMealData() {
 
 };
 getRandomMealData();
+// setInterval(getRandomMealData, 2000);
 
 
 
 
 //* Render the random meal to top of the page
 function renderRandomMeal(meal) {
+  randomMealDIV.innerHTML = '';
   // console.log(randomMeal.data.meals['0'].strMeal)
   // console.log('Here --->', randomMeal.data.meals['0'].strMealThumb)
 
@@ -97,6 +99,7 @@ async function searchMeal(value) {
     // console.log('here--->', result.data.meals[0].strIngredient1)
 
     renderResults(result);
+    searchInput.value = '';
   } catch (error) {
     console.error(error);
   };
@@ -109,19 +112,36 @@ async function searchMeal(value) {
 function renderResults(result) {
   //Data
   let meal = result.data.meals[0];
+
   //Main DIV
   const resultsDiv = document.getElementById('search-results');
+  resultsDiv.innerHTML = '';
+  if (result.data.meals == null) {
+    console.log('No Matches')
+    const h2NoResult = document.createElement('h2');
+    h2NoResult.innerHTML = 'No matches';
+    resultsDiv.appendChild(h2NoResult);
+  };
   ////////////////////////////////
-  //Display Ingredients and Measuments
+  // Meal title
+  const h2MealName = document.createElement('h1');
+  h2MealName.innerHTML = result.data.meals[0].strMeal;
+  resultsDiv.appendChild(h2MealName);
+  // UL Display Ingredients and Measuments
   const ulResult = document.createElement('ul');
+  resultsDiv.appendChild(ulResult);
+  //H2 to display Ingredients
+  const h2Ingredients = document.createElement('h2');
+  h2Ingredients.innerHTML = 'Ingredients';
+  ulResult.appendChild(h2Ingredients);
 
   //Built Object
   let ingArr = [];
   let measArr = [];
   let ingMeasObjArr = [];
-
+  //Loops on ingredients creates lis appends them to ul
   for (i in meal) {
-    if (i.includes("Ing") && meal[i] != "") {
+    if (i.includes("Ing") && meal[i] != "" && meal[i] != " ") {
 
       let li = document.createElement('li');
       li.innerHTML = meal[i];
@@ -132,12 +152,15 @@ function renderResults(result) {
     };
   };
 
-  let h2Meas = document.createElement('h2');
+
+  //Creates H2 to display Measurements
+  const h2Meas = document.createElement('h2');
   h2Meas.innerHTML = 'Measurements';
+  //apends it to ul
   ulResult.appendChild(h2Meas);
 
   for (m in meal) {
-    if (m.includes("Meas") && meal[m] != "") {
+    if (m.includes("Meas") && meal[m] != "" && meal[m] != " ") {
 
       let li = document.createElement('li');
       li.innerHTML = meal[m];
@@ -151,47 +174,12 @@ function renderResults(result) {
 
   // console.log(ingArr, measArr);
 
-  for (let value = 0; value < ingArr.length; value++) {
-    let obj = {}
-    obj[ingArr[value]] = measArr[value];
-    ingMeasObjArr.push(obj);
-  }
-  console.log('final data--->', ingMeasObjArr);
-
-
-
-
-
-  //Create
-  const h2MealName = document.createElement('h2');
-  const h3Ingredients = document.createElement('h3');
-
-
-
-  //Modify
-  h2MealName.innerHTML = result.data.meals[0].strMeal;
-  h3Ingredients.innerHTML = 'Ingredients';
-
-  //Append
-  resultsDiv.appendChild(h2MealName);
-  resultsDiv.appendChild(h3Ingredients);
-  resultsDiv.appendChild(ulResult);
-
-
-
-
-  let lis = document.createElement('li');
-  lis.innerHTML = result.data.meals[0].strIngredient1;
-  // ulResult.appendChild(lis);
-
-
-
-  //generate all ingredients lis needed
-
-  // for (let [key, value] of Object.entries(result.data.meals[0])) {
-  //   for (let i of [key, value]) {
-  //     console.log(key[i])
-  //     console.log(value[i])
+  // for (let value = 0; value < ingArr.length; value++) {
+  //   let obj = {}
+  //   obj[ingArr[value]] = measArr[value];
+  //   ingMeasObjArr.push(obj);
+  // }
+  // console.log('final data--->', ingMeasObjArr);
 
 }
 
