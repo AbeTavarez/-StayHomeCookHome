@@ -1,0 +1,70 @@
+/*Iphone X   */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+
+  html,
+  body {
+    box-sizing: border-box;
+
+  }
+
+
+  .display-random img {
+    width: 200px;
+    border-radius: 50px;
+  }
+
+  .search-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .search-bar {
+
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  footer {
+    display: flex;
+    background-color: #a7e9af;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    color: white;
+
+  }
+
+  .contact {
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .social-media {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  .result {
+    background-color: #40e0d0;
+    margin: 10px;
+    width: 350px;
+    border: 2px solid #f1fcfc;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .result img {
+    margin: 10px;
+    width: 300px;
+    border: 2px solid #f1fcfc;
+    border-radius: 75px;
+    margin-bottom: 80px;
+    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+  }
+
+}

@@ -62,7 +62,10 @@ a:active {
   color: red;
 }
 
-#home-session h1 {}
+h1 {
+  color: #633a82;
+  ;
+}
 
 .display-random {
   display: flex;
@@ -71,9 +74,10 @@ a:active {
   background-color: #40e0d0;
   color: white;
   font-weight: bold;
-  box-shadow: whitesmoke;
+  border: 2px solid #f1fcfc;
   border-radius: 10px;
   margin: 10px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.5);
 }
 
 .display-random img {
@@ -121,6 +125,27 @@ a:active {
   height: 35px;
   border-radius: 5px;
   border: 2px solid #633a82;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #40e0d0;
+  color: white;
+  font-weight: bold;
+  box-shadow: whitesmoke;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.result img {
+  margin: 10px;
+  width: 400px;
+  border: 2px solid #f1fcfc;
+  border-radius: 75px;
+  margin-bottom: 80px;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.5);
 }
 
 

@@ -24,9 +24,6 @@ const randomMealDIV = document.getElementById('random-div');
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 
-
-
-
 //* Gets random meal from DB
 async function getRandomMealData() {
   try {
@@ -48,9 +45,6 @@ async function getRandomMealData() {
 };
 getRandomMealData();
 // setInterval(getRandomMealData, 2000);
-
-
-
 
 //* Render the random meal to top of the page
 function renderRandomMeal(meal) {
@@ -106,15 +100,14 @@ async function searchMeal(value) {
 
 };
 
-
-
-
+//* Renders Search Results
 function renderResults(result) {
   //Data
   let meal = result.data.meals[0];
 
   //Main DIV
   const resultsDiv = document.getElementById('search-results');
+  resultsDiv.setAttribute('class', 'result');
   resultsDiv.innerHTML = '';
   if (result.data.meals == null) {
     console.log('No Matches')
@@ -127,6 +120,17 @@ function renderResults(result) {
   const h2MealName = document.createElement('h1');
   h2MealName.innerHTML = result.data.meals[0].strMeal;
   resultsDiv.appendChild(h2MealName);
+  //create append img
+  let img = document.createElement('img');
+  let imgURL = meal.strMealThumb;
+  img.setAttribute('src', imgURL);
+  img.setAttribute('class', 'result img');
+  resultsDiv.appendChild(img);
+
+
+
+
+
   // UL Display Ingredients and Measuments
   const ulResult = document.createElement('ul');
   resultsDiv.appendChild(ulResult);
@@ -165,25 +169,11 @@ function renderResults(result) {
       let li = document.createElement('li');
       li.innerHTML = meal[m];
       ulResult.appendChild(li);
-
-
       // console.log('mes---->', meal[m])
       measArr.push(meal[m]);
     };
   };
-
-  // console.log(ingArr, measArr);
-
-  // for (let value = 0; value < ingArr.length; value++) {
-  //   let obj = {}
-  //   obj[ingArr[value]] = measArr[value];
-  //   ingMeasObjArr.push(obj);
-  // }
-  // console.log('final data--->', ingMeasObjArr);
-
 }
-
-
 
 
 //* SEARCH BAR

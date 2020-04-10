@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./CSS/style.css">
   <!-- <link rel="stylesheet" href="./CSS/main.css" /> -->
-  <link rel="stylesheet" href="./CSS/queries.css" />
+  <link rel="stylesheet" href="./CSS/mediaQ.css" />
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="./JS/app.js" defer></script>
   <title>StayHomeCookHome</title>
@@ -16,10 +16,10 @@
   <header>
     <nav>
       <ul>
-        <a class="site-name">#StayHomeCookHome</a>
-        <a href="home-session">Home</a>
-        <a href="aboutus-session">Safetly Tips</a>
-        <a href="contact-session">Contact</a>
+        <!-- <a class="site-name"></a> -->
+        <a href="#home-session">Home</a>
+        <a href="#safety-session">Safetly Tips</a>
+        <a href="#contact-session">Contact</a>
       </ul>
     </nav>
   </header>
@@ -27,7 +27,8 @@
   <main>
     <!-- Display Random Meals -->
     <article id="home-session">
-      <h1>Check This Dish Out!</h1>
+      <a name="home-session"></a>
+      <h1>#StayHomeCookHome</h1>
       <section>
         <div class="display-random" id="random-div"></div>
       </section>
@@ -55,10 +56,11 @@
 
     <!-- About Us -->
     <article class="safety-tips-session">
+      <a name="safety-session"></a>
       <h3><span class="stay-safe">Stay Safe</span></h3>
       <section>
         <div>
-          <h1 class="highlight">How to Protect Yourself From Coronavirus When Grocery Shopping</h1>
+          <h2 class="highlight">How to Protect Yourself From Coronavirus When Grocery Shopping</h2>
           <h2>Here are precautions to take whether you shop in-store or online</h2>
           <p class="about-us">With the Centers for Disease Control and Prevention now recommending that people wear
             cloth, non-medical face coverings in public to help contain the spread of the coronavirus, you may wonder
@@ -214,7 +216,8 @@
   </main>
 
   <!-- FOOTER -->
-  <footer id="contact-session">
+  <footer id="contact-info">
+    <a name="contact-session"></a>
     <div class="contact">
       <h2><span>Abraham E. Tavarez</span></h2>
     </div>

@@ -1,13 +1,45 @@
-/*large tablets to 1200px*/
-@media only screen and (max-width:1200px) {}
+/*iPad Pro  1024px to 1366 or other large tables*/
+@media only screen and (min-width:1024px) and (max-width:1366px) {
 
-/* 780px to 1023px*/
-@media only screen and (max-width: 1023px) {}
+  html,
+  body {
+    background-color: red;
+  }
+}
+
+/* iPad 736px to 1024px*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+  html,
+  body {
+    background-color: green
+  }
+}
+
+/*Iphone X   */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+
+  html,
+  body {
+    background-color: orange;
+  }
+}
 
 
-/*small tables size 481px to 767px*/
-@media only screen and (max-width: 767px) {}
+/*iPhone PLus 667px to 736px*/
+@media only screen and (min-width: 414) and (max-width: 736px) {
 
+  html,
+  body {
+    background-color: yellow;
+  }
+}
 
-/*screen sizes 0 to 480px*/
-@media only screen and (max-width: 480px) {}
+/*iPhone 6,7,8 481px to 667px   Portrait*/
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+
+  html,
+  body {
+    background-color: blue;
+  }
+}
