@@ -131,21 +131,31 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   background-color: #40e0d0;
   color: white;
-  font-weight: bold;
+  font-size: 22px;
   box-shadow: whitesmoke;
   border-radius: 10px;
   margin: 10px;
 }
 
+.result h1 {
+  display: flex;
+  align-items: flex-start;
+}
+
 .result img {
   margin: 10px;
-  width: 400px;
+  width: 300px;
   border: 2px solid #f1fcfc;
   border-radius: 75px;
   margin-bottom: 80px;
   box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+}
+
+.result img:hover {
+  border-color: #633a82;
 }
 
 
@@ -168,7 +178,6 @@ h1 {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 75%, #F7ff00 75%);
 }
 
-.search-article {}
 
 footer {
   display: flex;

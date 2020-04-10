@@ -71,12 +71,6 @@ function renderRandomMeal(meal) {
 };
 // renderRandomMeal(randomMealsArray);
 
-//! Event Listener and handler
-function showMealDetails() {
-
-}
-randomMealDIV.addEventListener('click', showMealDetails);
-
 
 //* Event Handlers for search meals
 async function searchMeal(value) {
@@ -103,76 +97,83 @@ async function searchMeal(value) {
 //* Renders Search Results
 function renderResults(result) {
   //Data
-  let meal = result.data.meals[0];
+  let meal = result.data.meals; //here
+  // console.log(meal[1])
 
-  //Main DIV
-  const resultsDiv = document.getElementById('search-results');
-  resultsDiv.setAttribute('class', 'result');
-  resultsDiv.innerHTML = '';
-  if (result.data.meals == null) {
-    console.log('No Matches')
-    const h2NoResult = document.createElement('h2');
-    h2NoResult.innerHTML = 'No matches';
-    resultsDiv.appendChild(h2NoResult);
-  };
-  ////////////////////////////////
-  // Meal title
-  const h2MealName = document.createElement('h1');
-  h2MealName.innerHTML = result.data.meals[0].strMeal;
-  resultsDiv.appendChild(h2MealName);
-  //create append img
-  let img = document.createElement('img');
-  let imgURL = meal.strMealThumb;
-  img.setAttribute('src', imgURL);
-  img.setAttribute('class', 'result img');
-  resultsDiv.appendChild(img);
+  for (let x = 0; x < meal.length; x++) {
+    console.log(meal[x])
+
+    // Main DIV
+    let resultsDiv = document.getElementById('search-results');
+    resultsDiv.setAttribute('class', 'result');
+    // resultsDiv.innerHTML = '';
+    // if (result.data.meals == null) {
+    //   console.log('No Matches')
+    //   const h2NoResult = document.createElement('h2');
+    //   h2NoResult.innerHTML = 'No matches';
+    //   resultsDiv.appendChild(h2NoResult);
+    // };
+    ////////////////////////////////
+    // Meal title
+    let h2MealName = document.createElement('h1');
+    h2MealName.innerHTML = meal[x].strMeal;
+    // h2MealName.innerHTML = result.data.meals[x].strMeal; //here
+    resultsDiv.appendChild(h2MealName);
+    //create append img
+    let img = document.createElement('img');
+    let imgURL = meal[x].strMealThumb; //here
+
+    img.setAttribute('src', imgURL);
+    img.setAttribute('class', 'result');
+    resultsDiv.appendChild(img);
 
 
 
 
 
-  // UL Display Ingredients and Measuments
-  const ulResult = document.createElement('ul');
-  resultsDiv.appendChild(ulResult);
-  //H2 to display Ingredients
-  const h2Ingredients = document.createElement('h2');
-  h2Ingredients.innerHTML = 'Ingredients';
-  ulResult.appendChild(h2Ingredients);
+    // UL Display Ingredients and Measuments
+    let ulResult = document.createElement('ul');
+    resultsDiv.appendChild(ulResult);
+    //H2 to display Ingredients
+    let h2Ingredients = document.createElement('h2');
+    h2Ingredients.innerHTML = 'Ingredients';
+    ulResult.appendChild(h2Ingredients);
 
-  //Built Object
-  let ingArr = [];
-  let measArr = [];
-  let ingMeasObjArr = [];
-  //Loops on ingredients creates lis appends them to ul
-  for (i in meal) {
-    if (i.includes("Ing") && meal[i] != "" && meal[i] != " ") {
+    // Built Object
+    let ingArr = [];
+    let measArr = [];
+    let ingMeasObjArr = [];
+    //Loops on ingredients creates lis appends them to ul
+    for (i in meal[x]) { //here
+      if (i.includes("Ing") && meal[x][i] != "" && meal[x][i] != " ") {
 
-      let li = document.createElement('li');
-      li.innerHTML = meal[i];
-      ulResult.appendChild(li)
+        let li = document.createElement('li');
+        li.innerHTML = meal[x][i];
+        ulResult.appendChild(li)
 
-      // console.log('ing---->', meal[i])
-      ingArr.push(meal[i]);
+        // console.log('ing---->', meal[i])
+        // ingArr.push(meal[i]);
+      };
     };
-  };
 
 
-  //Creates H2 to display Measurements
-  const h2Meas = document.createElement('h2');
-  h2Meas.innerHTML = 'Measurements';
-  //apends it to ul
-  ulResult.appendChild(h2Meas);
+    //Creates H2 to display Measurements
+    let h2Meas = document.createElement('h2');
+    h2Meas.innerHTML = 'Measurements';
+    //apends it to ul
+    ulResult.appendChild(h2Meas);
 
-  for (m in meal) {
-    if (m.includes("Meas") && meal[m] != "" && meal[m] != " ") {
+    for (m in meal[x]) {
+      if (m.includes("Meas") && meal[x][m] != "" && meal[x][m] != " ") {
 
-      let li = document.createElement('li');
-      li.innerHTML = meal[m];
-      ulResult.appendChild(li);
-      // console.log('mes---->', meal[m])
-      measArr.push(meal[m]);
+        let li = document.createElement('li');
+        li.innerHTML = meal[x][m];
+        ulResult.appendChild(li);
+        // console.log('mes---->', meal[m])
+        // measArr.push(meal[x][m]);
+      };
     };
-  };
+  }
 }
 
 
