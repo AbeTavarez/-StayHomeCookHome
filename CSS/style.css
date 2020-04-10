@@ -7,12 +7,6 @@
 body {
   font-family: 'Roboto Slab', serif;
   background-color: #f1fcfc;
-
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0; */
 }
 
 h1 {
@@ -37,7 +31,6 @@ header {
 .site-name {
   display: flex;
   justify-content: flex-end;
-  /* margin-right: auto; */
 }
 
 a {
@@ -101,9 +94,7 @@ h1 {
   align-items: center;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-  /* width: 100%; */
   padding: 10px;
-
 }
 
 .search-article h2 {
