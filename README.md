@@ -66,7 +66,7 @@ The MealDB site:
 | April 6th       | Project Aproval/Core Application Structure(HTML,CSS) | Complete   |
 | April 7th       | Pseudocode / API and JS functionality                | Complete   |
 | April 8th       | Clickable Model Search, Rendering functionality      | Complete   |
-| April 9th       | MVP                                                  | Incomplete |
+| April 9th       | MVP                                                  | Complete   |
 | April 10th      | Present                                              | Incomplete |
 
 ## Priority Matrix
@@ -88,25 +88,27 @@ The MealDB site:
 | Testing and Debugging               |    H     |      4hrs      |     2hrs      |    2hrs     |
 | JS Functions and Handlers           |    H     |      5hrs      |     8hrs      |    8hrs     |
 | Applys CSS FlexBox                  |    H     |      4hrs      |     4hrs      |    4hrs     |
-| Site interactivity JS & FlexBox     |    H     |      6hrs      |      hrs      |     hrs     |
-| Total                               |    H     |     40hrs      |     35hrs     |    35hrs    |
+| Site interactivity JS & FlexBox     |    H     |      6hrs      |     6hrs      |    6hrs     |
+| Total                               |    H     |     40hrs      |     41hrs     |    41hrs    |
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description
+The JSON format was a little hard to work with because all the key were together on a single object.
+One of the solutions was to filter the keys I needed with the method .includes() and checking that the value wasn't null or undefind.
 
 ```
-for (m in meal) {
-    if (m.includes("Meas") && meal[m] != "" && meal[m] != " ") {
-      let li = document.createElement('li');
-      li.innerHTML = meal[m];
-      ulResult.appendChild(li);
-      measArr.push(meal[m]);
+for (m in meal[x]) {
+      if (m.includes("Meas") && meal[x][m] != "" && meal[x][m] != " ") {
+
+        let li = document.createElement('li');
+        li.innerHTML = meal[x][m];
+        ulResult.appendChild(li);
+        measArr.push(meal[x][m]);
+      };
     };
-  };
 
 ```
 
 ## Change Log
 
-Use this section to document what changes were made and the reasoning behind those changes.
+The layout of the page had to change because of issues with data coming back from the API.
