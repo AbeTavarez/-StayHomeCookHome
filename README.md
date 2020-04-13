@@ -3,6 +3,7 @@
 ## Project Name
 
 StayHomeCookHome
+![alt text](https://pages.git.generalassemb.ly/AbrahamEfrenTavarez/StayHomeCookHome/ "Page link")
 
 ## Project Description
 
@@ -59,15 +60,15 @@ The MealDB site:
 
 ## Project Schedule
 
-| Day             | Deliverable                                          | Status     |
-| --------------- | ---------------------------------------------------- | ---------- |
-| April 2rd       | Project Prompt                                       | Complete   |
-| April 3rd - 5th | Wireframes / Priority Matrix                         | Complete   |
-| April 6th       | Project Aproval/Core Application Structure(HTML,CSS) | Complete   |
-| April 7th       | Pseudocode / API and JS functionality                | Complete   |
-| April 8th       | Clickable Model Search, Rendering functionality      | Complete   |
-| April 9th       | MVP                                                  | Complete   |
-| April 10th      | Present                                              | Incomplete |
+| Day             | Deliverable                                          | Status   |
+| --------------- | ---------------------------------------------------- | -------- |
+| April 2rd       | Project Prompt                                       | Complete |
+| April 3rd - 5th | Wireframes / Priority Matrix                         | Complete |
+| April 6th       | Project Aproval/Core Application Structure(HTML,CSS) | Complete |
+| April 7th       | Pseudocode / API and JS functionality                | Complete |
+| April 8th       | Clickable Model Search, Rendering functionality      | Complete |
+| April 9th       | MVP                                                  | Complete |
+| April 10th      | Present                                              | Complete |
 
 ## Priority Matrix
 
