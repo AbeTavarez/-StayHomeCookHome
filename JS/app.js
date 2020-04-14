@@ -31,7 +31,6 @@ getRandomMealData();
 //* Render the random meal to top of the page
 function renderRandomMeal(meal) {
   randomMealDIV.innerHTML = '';
-
   //Meal variables
   const imgURL = meal.strMealThumb;
   const mealName = meal.strMeal;

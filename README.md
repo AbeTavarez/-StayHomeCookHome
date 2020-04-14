@@ -3,7 +3,7 @@
 ## Project Name
 
 StayHomeCookHome
-![alt text](https://pages.git.generalassemb.ly/AbrahamEfrenTavarez/StayHomeCookHome/ "Page link")
+(https://pages.git.generalassemb.ly/AbrahamEfrenTavarez/StayHomeCookHome/ "Page link")
 
 ## Project Description
 
